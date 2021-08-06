@@ -1,0 +1,149 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 8px 0 8px;
+  margin-bottom: 80px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  max-width: 25%;
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.column img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+	background: #fff;
+	width: 25%;
+	float: left;
+}
+
+.column .caption {
+	padding: 10px;
+	color: #212121;
+	font-size: 0.875rem;
+}
+
+.column a {
+	max-width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.column img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	display: block;
+	-webkit-transition: -webkit-transform .35s ease;
+	-moz-transition: -moz-transform .35s ease;
+	-o-transition: -o-transform .35s ease;
+	-ms-transition: -ms-transform .35s ease;
+	transition: transform .35s ease;
+}
+
+h1 {
+	font-family: "Public Sans", sans-serif;
+	font-weight: 600;
+	font-size: 64;
+	letter-spacing: -0.05em;
+
+}
+
+.header {
+  background-color: white;
+  color: black;
+  font-family: "Public Sans", sans-serif;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: -16px;
+  padding-bottom: -32px;
+  padding-top: 32px;
+  vertical-align: bottom;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-right: 26px;
+  font-family: "Public Sans", sans-serif;
+  text-align: right;
+}
+
+.foot {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  vertical-align: middle;
+  text-align: right;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row .column a img {
+  border-radius: 16px;
+  margin-top: 24px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.clear {
+            clear: both;
+}
+
+a {
+            color: #009688;
+            text-decoration: none;
+}
+
+a:hover {
+            color: #01695f;
+            text-decoration: none;
+}
