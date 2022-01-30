@@ -223,6 +223,7 @@ input, select, textarea {
 		font-size: 3.5rem;
 		font-weight: 600;
 		line-height: 1.2;
+		font-size: 60pt;
 	}
 
 	h2 {
@@ -2213,8 +2214,9 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5 !important;
+			background-color: #1100FF;
+			box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+			color: white !important;
 		}
 
 		input[type="submit"]:active,
@@ -2223,8 +2225,8 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: rgba(71, 211, 229, 0.2);
-			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5 !important;
+			box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+			color: white !important;
 		}
 
 		input[type="submit"].primary,
@@ -2632,14 +2634,15 @@ input, select, textarea {
 	}
 
 	a.icon.style2:hover:before {
-		box-shadow: inset 0 0 0 1px #47D3E5;
-		color: #47D3E5;
+		background-color: #1100FF;
+		box-shadow: inset 0 0 0 1px transparent;
+		color: white;
 	}
 
 	a.icon.style2:active:before {
 		background-color: rgba(71, 211, 229, 0.1);
 		box-shadow: inset 0 0 0 1px #47D3E5;
-		color: #47D3E5;
+		color: white;
 	}
 
 /* Image */
