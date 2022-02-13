@@ -2652,11 +2652,27 @@ input, select, textarea {
 		border-radius: 4px;
 		display: inline-block;
 		position: relative;
+		background-color: #ff0000;
+		background-size: cover;
+		overflow: hidden;
 	}
 
 		.image img {
 			display: block;
 			border-radius: 4px;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			transition: opacity 1s linear;
+		}
+		
+		.image img.loaded {
+			opacity: 1;
+		}
+		
+		.img-small {
+			filter: blur(50px);
+			transform: scale(1);
 		}
 
 		.image.left, .image.right {
