@@ -84,6 +84,8 @@ input, select, textarea {
 	appearance: none;
 }
 
+h1::selection, h2::selection, h3::selection, h4::selection, p::selection{background:#0000FF;color:#ffffff}
+
 /* Basic */
 
 	@-ms-viewport {
