@@ -55,8 +55,7 @@
 </head>
   <body class="">
     <dmlt-root _nghost-ssr-c128="" ng-version="13.1.1">
-      <router-outlet _ngcontent-ssr-c128="">
-</router-outlet>
+      <router-outlet _ngcontent-ssr-c128=""></router-outlet>
       <dmlt-tickets-overview _nghost-ssr-c79="">
         <dmlt-tickets-ui _ngcontent-ssr-c79="" _nghost-ssr-c77="">
           <dmlt-tickets-ui-matchday _ngcontent-ssr-c77="" _nghost-ssr-c67="" class="ng-star-inserted">
@@ -164,6 +163,10 @@
 <span _ngcontent-ssr-c49="" class="number">26</span>
 <span _ngcontent-ssr-c49="" class="label">S</span>
 </div>
+
+<p id="demo"></p>
+<p id="day"></p>
+
 </div>
                     </dmlt-tickets-ui-matchday-ui-countdown>
                   </div>
@@ -252,33 +255,9 @@
 <!---->
 <!---->
 <!---->
-                  <dmlt-ticket-states-area _ngcontent-ssr-c64="" _nghost-ssr-c63="" class="hidden ng-star-inserted">
-<dmlt-ticket-states _ngcontent-ssr-c63="" _nghost-ssr-c62="">
-<!---->
-</dmlt-ticket-states>
-                  </dmlt-ticket-states-area>
+
 <!---->
                 </div>
-                <dmlt-ticket-quick-access _ngcontent-ssr-c64="" class="quick-access ng-tns-c50-1 ng-star-inserted" _nghost-ssr-c50="">
-                  <dmlt-ticket-quick-access-ui _ngcontent-ssr-c50="" class="ng-tns-c50-1 ng-trigger ng-trigger-openClose" _nghost-ssr-c129="" style="margin-left: -165px;">
-<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
-<div _ngcontent-ssr-c129="" class="item"> Ticket anzeigen </div>
-</div>
-<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
-<div _ngcontent-ssr-c129="" class="item"> QR Code anzeigen </div>
-</div>
-<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
-<div _ngcontent-ssr-c129="" class="item"> Mobile Ticket </div>
-</div>
-<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
-<div _ngcontent-ssr-c129="" class="item"> print@Home </div>
-</div>
-<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
-<div _ngcontent-ssr-c129="" class="item"> Weiterleiten </div>
-</div>
-<!---->
-                  </dmlt-ticket-quick-access-ui>
-                </dmlt-ticket-quick-access>
 <!---->
               </div>
             </dmlt-ticket>
@@ -412,26 +391,42 @@
 </dmlt-notifications-outlet>
 </dmlt-root>
 
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
-                          <script src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/runtime.ec596f4d49749e52.js" type="module">
-</script>
-<script src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/polyfills.f2bdd4184bbef324.js" type="module">
-</script>
-<script src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/vendor.a4e99e252a00165c.js" type="module">
-</script>
-<script src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/main.13fcfd2a8d6a6e53.js" type="module">
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // by element
+  document.getElementById("day").innerHTML = days;
+  document.getElementById("hour").innerHTML = hours;
+  document.getElementById("min").innerHTML = minutes;
+  document.getElementById("sec").innerHTML = seconds;
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 </script>
 
-                          <noscript>
-<img src="https://tickets.fcbayern.com/akam/13/pixel_13c9a01?a=dD1hNGI3NTMyZTA2YTFiMjIwMDRiOWNhZjllOTM2ZDhmNDNjYWE4NTZhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" />
-</noscript>
-<script type="text/javascript" src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/TyB2YQE">
-</script>
-<div style="" id="usercentrics-root" data-created-at="1673546163838">
-</div>
-<iframe style="display: none;" id="uc-cross-domain-bridge" src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/cross-domain-bridge.htm">
-</iframe>
-<iframe src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/login-status-iframe.htm" title="keycloak-session-iframe" style="display: none;">
-</iframe>
 </body>
 </html>
