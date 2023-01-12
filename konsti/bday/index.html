@@ -145,30 +145,33 @@
                     </div>
                   </div>
                   <div _ngcontent-ssr-c66="" class="row">
-                    <dmlt-tickets-ui-matchday-ui-countdown _ngcontent-ssr-c66="" _nghost-ssr-c49="">
-<div _ngcontent-ssr-c49="" class="countdown">
-<div _ngcontent-ssr-c49="" class="element">
-<span _ngcontent-ssr-c49="" class="number"><p id="day"></p></span>
-<span _ngcontent-ssr-c49="" class="label">T</span>
-</div>
-<div _ngcontent-ssr-c49="" class="element">
-<span _ngcontent-ssr-c49="" class="number">21</span>
-<span _ngcontent-ssr-c49="" class="label">H</span>
-</div>
-<div _ngcontent-ssr-c49="" class="element">
-<span _ngcontent-ssr-c49="" class="number">33</span>
-<span _ngcontent-ssr-c49="" class="label">M</span>
-</div>
-<div _ngcontent-ssr-c49="" class="element">
-<span _ngcontent-ssr-c49="" class="number">26</span>
-<span _ngcontent-ssr-c49="" class="label">S</span>
-</div>
+<dmlt-tickets-ui-matchday-ui-countdown _ngcontent-ssr-c66="" _nghost-ssr-c49="">
+  <div _ngcontent-ssr-c49="" class="countdown">
+    <div _ngcontent-ssr-c49="" class="element">
+      <span _ngcontent-ssr-c49="" class="number">44</span>
+      <span _ngcontent-ssr-c49="" class="label">T</span>
+    </div>
+    <div _ngcontent-ssr-c49="" class="element">
+      <span _ngcontent-ssr-c49="" class="number">21</span>
+      <span _ngcontent-ssr-c49="" class="label">H</span>
+    </div>
+    <div _ngcontent-ssr-c49="" class="element">
+      <span _ngcontent-ssr-c49="" class="number">33</span>
+      <span _ngcontent-ssr-c49="" class="label">M</span>
+    </div>
+    <div _ngcontent-ssr-c49="" class="element">
+      <span _ngcontent-ssr-c49="" class="number">26</span>
+      <span _ngcontent-ssr-c49="" class="label">S</span>
+    </div>
+  </div>
+  <div _ngcontent-ssr-c49="" class="countdown">
+    <div _ngcontent-ssr-c49="" class="element">
+      <p _ngcontent-ssr-c49="" class="number" id="demo"></p>
+      <span _ngcontent-ssr-c49="" class="label">T</span>
+    </div>
+  </div>
+</dmlt-tickets-ui-matchday-ui-countdown>
 
-<p id="demo"></p>
-<p id="day"></p>
-
-</div>
-                    </dmlt-tickets-ui-matchday-ui-countdown>
                   </div>
                   <dmlt-ticket-list _ngcontent-ssr-c66="" _nghost-ssr-c65="">
                     <div _ngcontent-ssr-c65="" class="layout">
@@ -415,16 +418,10 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
 
   // by element
-  document.getElementById("day").innerHTML = days;
-  document.getElementById("hour").innerHTML = hours;
-  document.getElementById("min").innerHTML = minutes;
-  document.getElementById("sec").innerHTML = seconds;
-
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
+  document.getElementById("cdday").innerHTML = days;
+  document.getElementById("cdhour").innerHTML = hours;
+  document.getElementById("cdmin").innerHTML = minutes;
+  document.getElementById("cdsec").innerHTML = seconds;
 }, 1000);
 </script>
 
