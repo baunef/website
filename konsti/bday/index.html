@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Ticketcenter - FC Bayern München</title>
+  <!-- base href="https://tickets.fcbayern.com/ticketcenter/" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://tickets.fcbayern.com/ticketcenter/favicon.ico">
+  <style>@font-face{font-family:sans-serif;font-weight:400;font-style:normal}@font-face{font-family:sans-serif;font-weight:600;font-style:normal}@font-face{font-family:sans-serif;font-weight:700;font-style:normal}@font-face{font-family:sans-serif;font-weight:300;font-style:normal}:root{--dml-root-font-size:10px;--dml-primary-color:#0066B2;--dml-secondary-color:rgba(19, 56, 116, .05);--dml-background-color:#FFFFFF;--dml-badge-primary-color:#DC052D;--dml-badge-accent-color:#002F6C;--dml-error-color:#DC052D;--dml-error-text-color:#FFFFFF;--dml-warning-color:#FFF58C;--dml-warning-text-color:var(--dml-primary-text-color);--dml-info-color:#8AE699;--dml-info-benefits-color:rgba(0, 102, 178, .22);--dml-info-benefits-text-color:#000000;--dml-info-text-color:var(--dml-primary-text-color);--dml-primary-text-color:#002F6C;--dml-secondary-text-color:rgba(0, 47, 108, .65);--dml-card-background-color:rgba(19, 56, 116, .05);--dml-card-hover-background-color:rgba(19, 56, 116, .15);--dml-card-text-color:#0066B2;--dml-separator-color:rgba(19, 56, 116, .15);--dml-header-background:linear-gradient(to left bottom, #AA132D 0%, #DC052D 100%);--dml-header-text-primary:#FFFFFF;--dml-header-text-secondary:#FFFFFF;--dml-header-menu-margin:0;--dml-header-title-margin:0;--dml-formfield-color:rgba(0, 0, 0, .8);--dml-formfield-disabled-color:rgba(0, 0, 0, .5);--dml-formfield-background:rgba(0, 102, 178, .05);--dml-formfield-label-color:#0066B2;--dml-formfield-underline-color:rgba(0, 102, 178, .15);--dml-formfield-border-color:#FFFFFF;--dml-button-primary-color:#FFFFFF;--dml-button-primary-background-color:#0066B2;--dml-button-primary-hover-background-color:#0083E5;--dml-button-secondary-color:#0066B2;--dml-button-secondary-background-color:rgba(19, 56, 116, .05);--dml-button-secondary-hover-background-color:rgba(19, 56, 116, .15);--dml-headline-page-color:#002F6C;--dml-headline-section-color:#133874;--dml-headline-subsection-color:#0066B2;--dml-toggle-thumb-color:#ffffff;--dml-toggle-thumb-disabled-color:rgba(#FFFFFF, .24);--dml-toggle-primary-track-color:rgba(19, 56, 116, .15);--dml-toggle-primary-track-checked-color:#0066B2;--dml-toggle-primary-track-focus-color:#0083E5;--dml-toggle-primary-track-hover-color:#0083E5;--dml-toggle-secondary-track-color:rgba(0, 0, 0, .2);--dml-toggle-secondary-track-checked-color:#DC052D;--dml-toggle-secondary-track-focus-color:rgba(0, 0, 0, .2);--dml-toggle-secondary-track-hover-color:#DC052D;--dml-button-toggle-mobile-selected-text:#0066B2;--dml-button-toggle-mobile-selected-background:#ffffff;--dml-button-toggle-mobile-text:#ffffff;--dml-button-toggle-mobile-background:rgba(0, 0, 0, .1);--dml-button-toggle-focus-color:rgba(19, 56, 116, .05);--dml-stepper-color:#0066B2;--dml-loading-indicator-color:#133874;--dml-text-title:#002F6C;--dml-accordion-divider-color:#EBEDF0;--dml-skeleton-color:rgba(0, 102, 178, .1);--dml-skeleton-light-color:rgba(0, 102, 178, .05);--dml-text-transform:none;--dml-button-border-radius:3px}html{font-size:62.5%}body{font-family:sans-serif;font-weight:400;color:#002f6c;color:var(--dml-primary-text-color);font-size:1.6rem;margin:0}body{display:block}*{box-sizing:border-box}html{font-size:100%;font-size:62.5%}
+  </style>
+<style>[_ngcontent-ssr-c128]:root{display:block}</style>
+<style>[_nghost-ssr-c126]{display:block;padding-top:16px;padding-bottom:32px}.footer[_ngcontent-ssr-c126]{display:flex;flex-direction:column;align-items:center;justify-content:center;color:#002f6ca6;font-size:1.4rem}.links[_ngcontent-ssr-c126]{display:flex;align-items:center;justify-content:center;padding:0;margin-top:6px}.links[_ngcontent-ssr-c126]   li[_ngcontent-ssr-c126]{list-style:none;display:inline-block}.links[_ngcontent-ssr-c126]   li[_ngcontent-ssr-c126]:not(:first-of-type){margin-left:6px}.links[_ngcontent-ssr-c126]   li[_ngcontent-ssr-c126]   a[_ngcontent-ssr-c126]{text-decoration:none}.links[_ngcontent-ssr-c126]   li[_ngcontent-ssr-c126]   a[_ngcontent-ssr-c126]:hover{text-decoration:underline}</style>
+<style>[_nghost-ssr-c41]{position:fixed;z-index:10;left:0;top:0;width:100%;height:100%;padding-top:100px;padding-left:16px;padding-right:16px;overflow:auto;background-color:#0006}.hidden[_nghost-ssr-c41]{display:none}.container[_ngcontent-ssr-c41]{background-color:#fff;z-index:2}</style>
+<style>.message-container[_ngcontent-ssr-c127]{width:90%;position:fixed;top:20%;left:50%;transform:translate(-50%);z-index:10}@media (min-width: 768px){.message-container[_ngcontent-ssr-c127]{width:500px}}</style>
+
+<style>[_nghost-ssr-c124]{display:block;background:var(--dml-header-background)}.container[_ngcontent-ssr-c124]{display:flex;align-content:center;align-items:center;justify-content:space-between;height:44px;color:#fff;background-color:#0000001a;padding:0 16px;font-weight:600}.items[_ngcontent-ssr-c124]{display:flex;align-items:center;align-content:center}.items[_ngcontent-ssr-c124]   a[_ngcontent-ssr-c124]{text-decoration:none;line-height:110%}.items[_ngcontent-ssr-c124]   a.active[_ngcontent-ssr-c124]{text-decoration:underline}.items[_ngcontent-ssr-c124]   a[_ngcontent-ssr-c124]:not(:last-child){margin-right:20px}@media (max-width: 1199.98px){.view-switch[_ngcontent-ssr-c124]{display:none}}</style>
+<style>.container[_ngcontent-ssr-c38]{width:100%;height:5px}.loading-indicator[_ngcontent-ssr-c38]{width:100%;height:5px;position:relative;overflow:hidden}.loading-indicator[_ngcontent-ssr-c38]   .indeterminate[_ngcontent-ssr-c38]{background-color:var(--dml-loading-indicator-color)}@keyframes indeterminate{0%{left:-35%;right:100%}60%{left:100%;right:-90%}to{left:100%;right:-90%}}.loading-indicator[_ngcontent-ssr-c38]   .indeterminate[_ngcontent-ssr-c38]:before{top:0;left:0;bottom:0;content:"";position:absolute;will-change:left,right;background-color:inherit;animation:indeterminate 1.5s ease-in-out infinite}</style>
+<style>[_nghost-ssr-c34]{margin:0;font-weight:700}.dml-headline--page[_nghost-ssr-c34], .dml-headline--step[_nghost-ssr-c34]{font-size:28px;color:var(--dml-headline-page-color);padding-top:24px}.dml-headline--step[_nghost-ssr-c34], .dml-headline--section[_nghost-ssr-c34]{text-transform:uppercase}.dml-headline--section[_nghost-ssr-c34], .dml-headline--section-alt[_nghost-ssr-c34]{font-size:20px;color:var(--dml-headline-section-color);padding-top:16px;padding-bottom:12px}</style>
+<style>[_nghost-ssr-c121]{display:block;width:100%}.action[_ngcontent-ssr-c121]{display:flex;align-items:center;justify-content:center;padding:1.6rem;font-weight:600;background:var(--dml-button-secondary-hover-background-color);transition:background .15s ease}.action[_ngcontent-ssr-c121]:hover{cursor:pointer;background:var(--dml-button-secondary-background-color)}</style>
+<style>[_nghost-ssr-c44]{display:block;margin-top:11px;margin-left:16px;margin-right:16px}@media (min-width: 768px){[_nghost-ssr-c44]{margin-top:27px;margin-left:32px;margin-right:32px}}.type-inline[_nghost-ssr-c44]{margin-top:0;margin-bottom:0}.type-section[_nghost-ssr-c44]{margin-bottom:0}</style>
+<style>[_nghost-ssr-c40]{display:block;position:relative;padding:20px 16px 16px;margin:auto;background:#ffffff;border:1px solid rgba(0,0,0,.05);box-sizing:border-box;box-shadow:0 2px 16px #00000029;border-radius:6px;width:100%}@media (min-width: 768px){[_nghost-ssr-c40]{width:560px}}</style>
+<style>[_nghost-ssr-c108]{display:block}.circle[_ngcontent-ssr-c108]{width:48px;height:48px;border-radius:50%;background-color:#fff}.spinner[_ngcontent-ssr-c108]{width:100%;height:100%;padding:4px;color:#002f6c;animation-name:spin;animation-duration:3s;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style>
+<style>[_nghost-ssr-c79]{display:block}</style>
+<style>.matchday-section[_ngcontent-ssr-c77]{margin-top:-5px}.past-tickets-button[_ngcontent-ssr-c77]{margin-top:48px}.action-bar[_ngcontent-ssr-c77]{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}</style>
+<style>[_nghost-ssr-c45]{display:block}.matchday[_nghost-ssr-c45]{color:#fff;background-color:#000e29}.sticky[_nghost-ssr-c45]   .content-layout[_ngcontent-ssr-c45]{margin-top:0}</style>
+<style>[_nghost-ssr-c69]{display:block}</style>
+<style>[_nghost-ssr-c68]{display:block}.placeholder[_ngcontent-ssr-c68]{background-color:#0066b20d;height:48px;margin-bottom:16px;position:relative;overflow:hidden}.placeholder[_ngcontent-ssr-c68]:before{top:0;left:0;bottom:0;content:"";position:absolute;will-change:left,right;background-color:inherit;animation:placeHolderShimmer 1.5s ease-in-out infinite}.placeholder-small[_ngcontent-ssr-c68]{height:32px}.placeholder-dark[_ngcontent-ssr-c68]{background-color:#0066b21a}@keyframes placeHolderShimmer{0%{left:-35%;right:100%}60%{left:100%;right:-90%}to{left:100%;right:-90%}}</style>
+<style>.toggle-container[_ngcontent-ssr-c123]{display:flex;align-items:center}.toggle-label[_ngcontent-ssr-c123]{margin-left:5px}</style>
+<style>.dml-toggle--primary[_nghost-ssr-c35]   .track[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-primary-track-color);color:var(--dml-toggle-primary-track-color)}.dml-toggle--primary.dml-checked[_nghost-ssr-c35]:not(.cdk-keyboard-focused)   .track[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-primary-track-checked-color)}.dml-toggle--primary.dml-checked[_nghost-ssr-c35]   [_ngcontent-ssr-c35]:hover:not(.dml-disabled)   .track[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-primary-track-focus-color)}.dml-toggle--primary[_nghost-ssr-c35]   [_ngcontent-ssr-c35]:hover:not(.dml-disabled)   .track[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-primary-track-hover-color)}.dml-toggle--secondary[_nghost-ssr-c35]   .track[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-secondary-track-color);color:var(--dml-toggle-secondary-track-color)}.dml-toggle--secondary.dml-checked[_nghost-ssr-c35]:not(.cdk-keyboard-focused)   .track[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-secondary-track-checked-color)}.dml-toggle--secondary.dml-checked[_nghost-ssr-c35]   [_ngcontent-ssr-c35]:hover:not(.dml-disabled)   .track[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-secondary-track-focus-color)}.dml-toggle--secondary[_nghost-ssr-c35]   [_ngcontent-ssr-c35]:hover:not(.dml-disabled)   .track[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-secondary-track-hover-color)}[_nghost-ssr-c35]{display:inline-block;position:relative}.label[_ngcontent-ssr-c35]{cursor:pointer}.track[_ngcontent-ssr-c35]{width:44px;border-radius:12px;padding-left:4px;padding-right:4px;height:24px;display:flex;align-items:center;transition:background-color .2s cubic-bezier(.35,0,.25,1);box-sizing:content-box}.thumb[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-thumb-color);width:16px;height:16px;border-radius:50%;box-shadow:0 2px 4px #0000003d;transition:transform .3s cubic-bezier(.35,0,.25,1)}.dml-checked[_nghost-ssr-c35]   .thumb[_ngcontent-ssr-c35]{transform:translate(28px)}.toggle-input[_ngcontent-ssr-c35]{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;outline:0}.cdk-keyboard-focused[_nghost-ssr-c35]   .dml-focus-overlay[_ngcontent-ssr-c35]{opacity:1}.dml-disabled[_nghost-ssr-c35]   .label[_ngcontent-ssr-c35]{cursor:default}.dml-disabled[_nghost-ssr-c35]   .thumb[_ngcontent-ssr-c35]{background-color:var(--dml-toggle-thumb-disabled-color)}</style>
+<style>[_nghost-ssr-c67]{display:block;margin-top:-5px}</style>
+<style>[_nghost-ssr-c66]{display:block}.headline[_ngcontent-ssr-c66]{color:#fff!important;padding-top:0!important}.content[_ngcontent-ssr-c66]{padding-bottom:16px}.icon[_ngcontent-ssr-c66]{margin-right:12px}.row[_ngcontent-ssr-c66]{display:flex}.row[_ngcontent-ssr-c66]:not(:last-child){margin-bottom:16px}.pair[_ngcontent-ssr-c66]{display:flex}.pair[_ngcontent-ssr-c66]:first-child{margin-right:21px}.section[_ngcontent-ssr-c66]{padding-top:24px;padding-bottom:24px}</style>
+<style>[_nghost-ssr-c72]{display:block}</style>
+<style>[_nghost-ssr-c71]{display:block}</style>
+<style>.container[_ngcontent-ssr-c70]{display:flex;flex-direction:row;align-items:center;color:#0066b2;font-weight:600;height:100%}.outlined[_ngcontent-ssr-c70]{border:2px solid var(--dml-separator-color);border-radius:5px;padding:0 5px}.select[_ngcontent-ssr-c70]{min-height:24px;-moz-appearance:none;-webkit-appearance:none;-moz-padding-start:7px;appearance:none;border:none;color:inherit;font-family:inherit;font-weight:inherit;font-size:inherit;cursor:pointer;background:none;outline:none;width:100%}select[_ngcontent-ssr-c70]::-ms-expand{display:none}</style>
+<style>[_nghost-ssr-c47]{display:block;height:21px}svg[_ngcontent-ssr-c47]{height:100%}</style>
+<style>[_nghost-ssr-c49]{display:block}.countdown[_ngcontent-ssr-c49]{display:flex;flex-direction:row;min-width:196px;padding:6px 9px;border-radius:3px;letter-spacing:.1rem;background-color:#ffffff1a}.number[_ngcontent-ssr-c49]{font-size:2rem;font-weight:600}.label[_ngcontent-ssr-c49]{font-size:1.1rem;margin-left:4px;font-weight:600}.element[_ngcontent-ssr-c49]:not(:last-child){margin-right:6px}</style>
+<style>[_nghost-ssr-c65]{display:block}.layout[_ngcontent-ssr-c65]{display:flex;flex-wrap:wrap}@media (max-width: 767.98px){.layout[_ngcontent-ssr-c65]{flex-direction:column;align-items:flex-start;justify-content:center}}.ticket[_ngcontent-ssr-c65]:not(:last-child){margin-bottom:18px}@media (min-width: 576px){.ticket[_ngcontent-ssr-c65]:not(:last-child){margin-right:18px}}</style>
+<style>[_nghost-ssr-c64]{display:inline-block;max-width:100%}.interactive[_ngcontent-ssr-c64]{cursor:pointer}.ticket[_ngcontent-ssr-c64]{width:312px;min-width:312px;height:184px;padding:16px;border:1px solid #FFFFFF;border-radius:4px}.ticket-wrapper[_ngcontent-ssr-c64]{z-index:2}.quick-access[_ngcontent-ssr-c64]{margin-left:-3px;margin-top:1px;z-index:1}.wrapper[_ngcontent-ssr-c64]{display:flex;overflow:scroll;-ms-overflow-style:none;scrollbar-width:none}.wrapper[_ngcontent-ssr-c64]::-webkit-scrollbar{display:none}</style>
+<style>[_nghost-ssr-c59]{display:block;color:#002f6c;background:#F2F5F8}.theme-parking[_nghost-ssr-c59]{background:linear-gradient(246.83deg,#0066B2 1.39%,#002F6C 100%);color:#fff}.theme-parking[_nghost-ssr-c59]   .headline[_ngcontent-ssr-c59]{color:#fff}.club-name[_ngcontent-ssr-c59]{white-space:nowrap}.gap[_ngcontent-ssr-c59]{margin-bottom:2px}</style>
+<style>[_nghost-ssr-c53]{height:100%;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between}.headline[_ngcontent-ssr-c53]{width:100%;display:flex;align-items:center;justify-content:space-between}.row[_ngcontent-ssr-c53]{display:flex;flex-direction:row;width:100%;overflow:hidden;justify-content:space-between}.text[_ngcontent-ssr-c53]{font-size:1.4rem}</style>
+<style>[_nghost-ssr-c54]{text-transform:uppercase;font-weight:600;font-size:1.4rem;line-height:1.6rem;color:#133874;opacity:.5}</style>
+<style>[_nghost-ssr-c55]{font-weight:700;font-size:2rem;line-height:2.23rem}</style>
+<style>[_nghost-ssr-c56]{display:block}.icons[_ngcontent-ssr-c56]{display:flex}.icon[_ngcontent-ssr-c56]{width:33px;height:33px;background-size:contain;background-repeat:no-repeat;background-position:center}.second[_ngcontent-ssr-c56]{margin-left:-18px}</style>
+<style>.row[_ngcontent-ssr-c57]{display:flex;align-items:center;flex-direction:row}.row[_ngcontent-ssr-c57]:not(:last-of-type){margin-bottom:2px}.pair[_ngcontent-ssr-c57]{display:flex;align-items:flex-start;flex-direction:column;font-size:1.4rem}.pair[_ngcontent-ssr-c57]:not(:last-child){margin-right:18px}.headline[_ngcontent-ssr-c57]{font-weight:600}.hidden[_ngcontent-ssr-c57]{display:none}</style>
+<style>[_nghost-ssr-c58]{display:block;margin-left:auto;align-self:flex-end}.competition-logo[_ngcontent-ssr-c58]{width:2rem;height:2rem;background-size:contain;background-repeat:no-repeat;background-position:center}</style>
+<style>[_nghost-ssr-c63]{display:block;border-radius:0 0 4px 4px;margin-top:-3px;padding:10px 16px 8px}.hidden[_nghost-ssr-c63]{display:none}</style>
+<style>[_nghost-ssr-c62]{display:block}.badge[_ngcontent-ssr-c62]:not(:last-of-type){margin-right:6px}</style>
+<style>[_nghost-ssr-c50]{display:block}</style>
+<style>[_nghost-ssr-c129]{display:block;height:182px;width:168px;background:rgba(0,102,178,.05);border-radius:0 3px 3px 0}.row[_ngcontent-ssr-c129]{display:flex;align-items:center;border-bottom:1px solid rgba(0,0,0,.1);min-height:32px;cursor:pointer}.row[_ngcontent-ssr-c129]:hover{background:rgba(0,102,178,.05)}.item[_ngcontent-ssr-c129]{margin-left:12px;line-height:110%}</style>
+<style>[_nghost-ssr-c51]{display:block;cursor:pointer}.dots[_ngcontent-ssr-c51]{fill:currentColor}</style>
+<style>[_nghost-ssr-c76]{display:block}</style>
+<style>[_nghost-ssr-c75]{display:flex;flex-direction:column;align-items:center;justify-content:center;background-color:#f2f5f8;color:inherit;min-height:163px;border-radius:6px;padding:18px}.title[_ngcontent-ssr-c75], .description[_ngcontent-ssr-c75]{text-align:center}.title-element[_ngcontent-ssr-c75]{padding-top:0!important}</style>
+</head>
+  <body class="">
+    <dmlt-root _nghost-ssr-c128="" ng-version="13.1.1">
+      <router-outlet _ngcontent-ssr-c128="">
+</router-outlet>
+      <dmlt-tickets-overview _nghost-ssr-c79="">
+        <dmlt-tickets-ui _ngcontent-ssr-c79="" _nghost-ssr-c77="">
+          <dmlt-tickets-ui-matchday _ngcontent-ssr-c77="" _nghost-ssr-c67="" class="ng-star-inserted">
+            <dmlt-tickets-ui-matchday-ui _ngcontent-ssr-c67="" _nghost-ssr-c66="">
+              <dmlt-tickets-ui-section _ngcontent-ssr-c66="" type="matchday" class="section matchday sticky ng-star-inserted" _nghost-ssr-c45="">
+                <dmlt-content-layout _ngcontent-ssr-c45="" type="section" class="content-layout type-section" _nghost-ssr-c44="">
+                  <div _ngcontent-ssr-c66="" fadeinanimation="" class="ng-tns-c46-0 ng-trigger ng-trigger-fadeInAnimation ng-star-inserted" style="opacity: 1; transform: translateY(0px);">
+                    <h2 _ngcontent-ssr-c66="" dmlheadline="section-alt" class="headline ng-tns-c46-0 dml-headline--section-alt" _nghost-ssr-c34=""> Alles Gute zum Geburtstag, Konsti! </h2>
+                    <div _ngcontent-ssr-c66="" class="content ng-tns-c46-0">
+                      <div _ngcontent-ssr-c66="" class="row"> FC Bayern München - 1. FC Union Berlin
+                    </div>
+                    <div _ngcontent-ssr-c66="" class="row">
+<div _ngcontent-ssr-c66="" class="pair">
+                      <dmlt-icon _ngcontent-ssr-c66="" type="time" class="icon" _nghost-ssr-c47="">
+<!---->
+                        <svg _ngcontent-ssr-c47="" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ng-star-inserted" style="">
+                          <path _ngcontent-ssr-c47="" fill-rule="evenodd" clip-rule="evenodd" d="M14.5 8C14.5 11.5899 11.5899 14.5 8 14.5C4.41015 14.5 1.5 11.5899 1.5 8C1.5 4.41015 4.41015 1.5 8 1.5C11.5899 1.5 14.5 4.41015 14.5 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM7.25 3V8C7.25 8.25076 7.37533 8.48494 7.58397 8.62404L10.584 10.624L11.416 9.37596L8.75 7.59861V3H7.25Z" fill="currentColor">
+                          </path>
+                        </svg>
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+                      </dmlt-icon>
+<div _ngcontent-ssr-c66="">
+                        <dmlt-match-date-time _ngcontent-ssr-c66=""> 26.02.2023 17:30 <!---->
+<!---->
+<!---->
+</dmlt-match-date-time>
+                      </div>
+                    </div>
+                    <div _ngcontent-ssr-c66="" class="pair">
+                      <dmlt-icon _ngcontent-ssr-c66="" type="location" class="icon" _nghost-ssr-c47="">
+<svg _ngcontent-ssr-c47="" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="ng-star-inserted" style="">
+<path _ngcontent-ssr-c47="" fill-rule="evenodd" clip-rule="evenodd" d="M10.5 6V6.56971C10.5 7.7799 10.0671 8.95018 9.2795 9.86903L6 13.6951L2.7205 9.86903C1.93291 8.95018 1.5 7.7799 1.5 6.56971V6C1.5 3.51472 3.51472 1.5 6 1.5C8.48528 1.5 10.5 3.51472 10.5 6ZM12 6.56971C12 8.13797 11.439 9.6545 10.4184 10.8452L6 16L1.58161 10.8452C0.561001 9.6545 0 8.13797 0 6.56971V6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6V6.56971ZM6 7.5C6.82843 7.5 7.5 6.82843 7.5 6C7.5 5.17157 6.82843 4.5 6 4.5C5.17157 4.5 4.5 5.17157 4.5 6C4.5 6.82843 5.17157 7.5 6 7.5Z" fill="currentColor">
+</path>
+</svg>
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+                      </dmlt-icon>
+                      <div _ngcontent-ssr-c66="">Allianz Arena</div>
+                    </div>
+                  </div>
+                  <div _ngcontent-ssr-c66="" class="row">
+                    <dmlt-tickets-ui-matchday-ui-countdown _ngcontent-ssr-c66="" _nghost-ssr-c49="">
+<div _ngcontent-ssr-c49="" class="countdown">
+<div _ngcontent-ssr-c49="" class="element">
+<span _ngcontent-ssr-c49="" class="number">44</span>
+<span _ngcontent-ssr-c49="" class="label">T</span>
+</div>
+<div _ngcontent-ssr-c49="" class="element">
+<span _ngcontent-ssr-c49="" class="number">22</span>
+<span _ngcontent-ssr-c49="" class="label">H</span>
+</div>
+<div _ngcontent-ssr-c49="" class="element">
+<span _ngcontent-ssr-c49="" class="number">33</span>
+<span _ngcontent-ssr-c49="" class="label">M</span>
+</div>
+<div _ngcontent-ssr-c49="" class="element">
+<span _ngcontent-ssr-c49="" class="number">26</span>
+<span _ngcontent-ssr-c49="" class="label">S</span>
+</div>
+</div>
+                    </dmlt-tickets-ui-matchday-ui-countdown>
+                  </div>
+                  <dmlt-ticket-list _ngcontent-ssr-c66="" _nghost-ssr-c65="">
+                    <div _ngcontent-ssr-c65="" class="layout">
+                      <dmlt-ticket _ngcontent-ssr-c65="" class="ticket ng-star-inserted" _nghost-ssr-c64="" style="">
+                        <div _ngcontent-ssr-c64="" class="wrapper">
+<div _ngcontent-ssr-c64="" class="ticket-wrapper">
+                          <dmlt-single-ticket _ngcontent-ssr-c64="" class="theme-default ticket interactive ng-star-inserted" _nghost-ssr-c59="">
+                            <dmlt-ticket-layout _ngcontent-ssr-c59="" _nghost-ssr-c53="">
+<div _ngcontent-ssr-c53="" class="headline row">
+<div _ngcontent-ssr-c59="" dmlticketingticketheadline="" slot="headline" class="headline" _nghost-ssr-c54="">
+<span _ngcontent-ssr-c59="">Zweitmarkt</span>
+<span _ngcontent-ssr-c59=""> - </span>
+                              <span _ngcontent-ssr-c59="">
+<dmlt-match-date-time _ngcontent-ssr-c59=""> 26.02.2023 17:30 <!---->
+<!---->
+<!---->
+</dmlt-match-date-time>
+</span>
+</div>
+<dmlt-ticket-quick-access-icon _ngcontent-ssr-c59="" slot="quickAccess" _nghost-ssr-c51="" class="ng-star-inserted">
+<svg _ngcontent-ssr-c51="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path _ngcontent-ssr-c51="" fill-rule="evenodd" clip-rule="evenodd" d="M11 6H13V8H11V6ZM11 11H13V13H11V11ZM13 16H11V18H13V16Z" fill="white" class="dots">
+</path>
+</svg>
+</dmlt-ticket-quick-access-icon>
+<!---->
+                            </div>
+                            <div _ngcontent-ssr-c53="" class="row">
+<span _ngcontent-ssr-c59="" dmlticketingtickettitle="" slot="title" _nghost-ssr-c55="">
+<span _ngcontent-ssr-c59="" class="club-name ng-star-inserted">FC Bayern München</span>
+<span _ngcontent-ssr-c59="" class="ng-star-inserted">–<br _ngcontent-ssr-c59="">
+</span>
+<span _ngcontent-ssr-c59="" class="club-name ng-star-inserted">1. FC Union Berlin</span>
+<!---->
+<!---->
+<!---->
+</span>
+<dmlt-ticket-club-logos _ngcontent-ssr-c59="" slot="logos" _nghost-ssr-c56="">
+<div _ngcontent-ssr-c56="" class="icons">
+<div _ngcontent-ssr-c56="" class="icon" style="background-image: url(&quot;https://img.fcbayern.com/image/upload/f_auto,b_auto,c_fill_pad,g_auto,w_120,h_120/ticketing/teams/10023.png&quot;);">
+</div>
+<div _ngcontent-ssr-c56="" class="icon second" style="background-image: url(&quot;https://img.fcbayern.com/image/upload/f_auto,b_auto,c_fill_pad,g_auto,w_120,h_120/ticketing/teams/1190670.png&quot;);">
+</div>
+</div>
+</dmlt-ticket-club-logos>
+                          </div>
+                          <div _ngcontent-ssr-c53="" class="text">
+<!---->
+<div _ngcontent-ssr-c59="" class="gap ng-star-inserted">Bundesliga 2022/23</div>
+<!---->
+<!---->
+                        </div>
+                        <div _ngcontent-ssr-c53="" class="row">
+<dmlt-ticket-location _ngcontent-ssr-c59="" slot="location" _nghost-ssr-c57="">
+<div _ngcontent-ssr-c57="" class="row">
+<div _ngcontent-ssr-c57="" class="pair ng-star-inserted">
+<div _ngcontent-ssr-c57="" class="headline">Block</div>
+<div _ngcontent-ssr-c57="">324</div>
+</div>
+<!---->
+<div _ngcontent-ssr-c57="" class="pair ng-star-inserted">
+<div _ngcontent-ssr-c57="" class="headline">Reihe</div>
+<div _ngcontent-ssr-c57="">15</div>
+</div>
+<!---->
+<div _ngcontent-ssr-c57="" class="pair ng-star-inserted">
+<div _ngcontent-ssr-c57="" class="headline">Platz</div>
+<div _ngcontent-ssr-c57="">12</div>
+</div>
+<!---->
+<!---->
+</div>
+<div _ngcontent-ssr-c57="" class="row">
+<!---->
+</div>
+</dmlt-ticket-location>
+<dmlt-ticket-competition-logo _ngcontent-ssr-c59="" slot="competition-logo" _nghost-ssr-c58="">
+<div _ngcontent-ssr-c58="" class="competition-logo" style="background-image: url(&quot;https://img.fcbayern.com/image/upload/f_auto/ticketing/competitions/07K.png&quot;);">
+</div>
+</dmlt-ticket-competition-logo>
+                      </div>
+                    </dmlt-ticket-layout>
+                  </dmlt-single-ticket>
+<!---->
+<!---->
+<!---->
+                  <dmlt-ticket-states-area _ngcontent-ssr-c64="" _nghost-ssr-c63="" class="hidden ng-star-inserted">
+<dmlt-ticket-states _ngcontent-ssr-c63="" _nghost-ssr-c62="">
+<!---->
+</dmlt-ticket-states>
+                  </dmlt-ticket-states-area>
+<!---->
+                </div>
+                <dmlt-ticket-quick-access _ngcontent-ssr-c64="" class="quick-access ng-tns-c50-1 ng-star-inserted" _nghost-ssr-c50="">
+                  <dmlt-ticket-quick-access-ui _ngcontent-ssr-c50="" class="ng-tns-c50-1 ng-trigger ng-trigger-openClose" _nghost-ssr-c129="" style="margin-left: -165px;">
+<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
+<div _ngcontent-ssr-c129="" class="item"> Ticket anzeigen </div>
+</div>
+<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
+<div _ngcontent-ssr-c129="" class="item"> QR Code anzeigen </div>
+</div>
+<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
+<div _ngcontent-ssr-c129="" class="item"> Mobile Ticket </div>
+</div>
+<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
+<div _ngcontent-ssr-c129="" class="item"> print@Home </div>
+</div>
+<div _ngcontent-ssr-c129="" class="row ng-star-inserted" style="">
+<div _ngcontent-ssr-c129="" class="item"> Weiterleiten </div>
+</div>
+<!---->
+                  </dmlt-ticket-quick-access-ui>
+                </dmlt-ticket-quick-access>
+<!---->
+              </div>
+            </dmlt-ticket>
+            <dmlt-ticket _ngcontent-ssr-c65="" class="ticket ng-star-inserted" _nghost-ssr-c64="" style="">
+              <div _ngcontent-ssr-c64="" class="wrapper">
+                <div _ngcontent-ssr-c64="" class="ticket-wrapper">
+                  <dmlt-single-ticket _ngcontent-ssr-c64="" class="theme-default ticket interactive ng-star-inserted" _nghost-ssr-c59="">
+                    <dmlt-ticket-layout _ngcontent-ssr-c59="" _nghost-ssr-c53="">
+                      <div _ngcontent-ssr-c53="" class="headline row">
+                        <div _ngcontent-ssr-c59="" dmlticketingticketheadline="" slot="headline" class="headline" _nghost-ssr-c54="">
+                          <span _ngcontent-ssr-c59="">Zweitmarkt</span>
+<span _ngcontent-ssr-c59=""> - </span>
+<span _ngcontent-ssr-c59="">
+<dmlt-match-date-time _ngcontent-ssr-c59=""> 26.02.2023 17:30 <!---->
+<!---->
+<!---->
+</dmlt-match-date-time>
+</span>
+</div>
+<dmlt-ticket-quick-access-icon _ngcontent-ssr-c59="" slot="quickAccess" _nghost-ssr-c51="" class="ng-star-inserted">
+<svg _ngcontent-ssr-c51="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path _ngcontent-ssr-c51="" fill-rule="evenodd" clip-rule="evenodd" d="M11 6H13V8H11V6ZM11 11H13V13H11V11ZM13 16H11V18H13V16Z" fill="white" class="dots">
+</path>
+</svg>
+</dmlt-ticket-quick-access-icon>
+<!---->
+</div>
+<div _ngcontent-ssr-c53="" class="row">
+<span _ngcontent-ssr-c59="" dmlticketingtickettitle="" slot="title" _nghost-ssr-c55="">
+<span _ngcontent-ssr-c59="" class="club-name ng-star-inserted">FC Bayern München</span>
+<span _ngcontent-ssr-c59="" class="ng-star-inserted">–<br _ngcontent-ssr-c59="">
+</span>
+<span _ngcontent-ssr-c59="" class="club-name ng-star-inserted">1. FC Union Berlin</span>
+<!---->
+<!---->
+<!---->
+</span>
+<dmlt-ticket-club-logos _ngcontent-ssr-c59="" slot="logos" _nghost-ssr-c56="">
+<div _ngcontent-ssr-c56="" class="icons">
+<div _ngcontent-ssr-c56="" class="icon" style="background-image: url(&quot;https://img.fcbayern.com/image/upload/f_auto,b_auto,c_fill_pad,g_auto,w_120,h_120/ticketing/teams/10023.png&quot;);">
+</div>
+<div _ngcontent-ssr-c56="" class="icon second" style="background-image: url(&quot;https://img.fcbayern.com/image/upload/f_auto,b_auto,c_fill_pad,g_auto,w_120,h_120/ticketing/teams/1190670.png&quot;);">
+</div>
+</div>
+</dmlt-ticket-club-logos>
+</div>
+<div _ngcontent-ssr-c53="" class="text">
+<!---->
+<div _ngcontent-ssr-c59="" class="gap ng-star-inserted">Bundesliga 2022/23</div>
+<!---->
+<!---->
+</div>
+<div _ngcontent-ssr-c53="" class="row">
+<dmlt-ticket-location _ngcontent-ssr-c59="" slot="location" _nghost-ssr-c57="">
+<div _ngcontent-ssr-c57="" class="row">
+<div _ngcontent-ssr-c57="" class="pair ng-star-inserted">
+<div _ngcontent-ssr-c57="" class="headline">Block</div>
+<div _ngcontent-ssr-c57="">324</div>
+</div>
+<!---->
+<div _ngcontent-ssr-c57="" class="pair ng-star-inserted">
+<div _ngcontent-ssr-c57="" class="headline">Reihe</div>
+<div _ngcontent-ssr-c57="">15</div>
+</div>
+<!---->
+<div _ngcontent-ssr-c57="" class="pair ng-star-inserted">
+<div _ngcontent-ssr-c57="" class="headline">Platz</div>
+<div _ngcontent-ssr-c57="">13</div>
+</div>
+<!---->
+<!---->
+</div>
+<div _ngcontent-ssr-c57="" class="row">
+<!---->
+</div>
+</dmlt-ticket-location>
+<dmlt-ticket-competition-logo _ngcontent-ssr-c59="" slot="competition-logo" _nghost-ssr-c58="">
+<div _ngcontent-ssr-c58="" class="competition-logo" style="background-image: url(&quot;https://img.fcbayern.com/image/upload/f_auto/ticketing/competitions/07K.png&quot;);" title="">
+</div>
+</dmlt-ticket-competition-logo>
+</div>
+</dmlt-ticket-layout>
+</dmlt-single-ticket>
+<!---->
+<!---->
+<!---->
+
+<!---->
+
+<!---->
+</dmlt-ticket-quick-access-ui>
+</dmlt-ticket-quick-access>
+<!---->
+</div>
+</dmlt-ticket>
+<!---->
+</div>
+</dmlt-ticket-list>
+</div>
+</div>
+</dmlt-content-layout>
+</dmlt-tickets-ui-section>
+<!---->
+<!---->
+</dmlt-tickets-ui-matchday-ui>
+</dmlt-tickets-ui-matchday>
+<!---->
+<dmlt-tickets-ui-section _ngcontent-ssr-c77="" type="default" _nghost-ssr-c45="">
+<dmlt-content-layout _ngcontent-ssr-c45="" type="section" class="content-layout type-section" _nghost-ssr-c44="">
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+</dmlt-content-layout>
+</dmlt-tickets-ui-section>
+</dmlt-tickets-ui>
+<!---->
+</dmlt-tickets-overview>
+<!---->
+<dml-modal-wrapper _ngcontent-ssr-c128="" _nghost-ssr-c41="" class="hidden">
+<dml-modal _ngcontent-ssr-c41="" _nghost-ssr-c40="">
+<div _ngcontent-ssr-c41="" class="container">
+<!---->
+</div>
+</dml-modal>
+</dml-modal-wrapper>
+<dmlt-notifications-outlet _ngcontent-ssr-c128="" _nghost-ssr-c127="">
+<!---->
+</dmlt-notifications-outlet>
+</dmlt-root>
+
+
+                          <script src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/runtime.ec596f4d49749e52.js" type="module">
+</script>
+<script src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/polyfills.f2bdd4184bbef324.js" type="module">
+</script>
+<script src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/vendor.a4e99e252a00165c.js" type="module">
+</script>
+<script src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/main.13fcfd2a8d6a6e53.js" type="module">
+</script>
+
+                          <noscript>
+<img src="https://tickets.fcbayern.com/akam/13/pixel_13c9a01?a=dD1hNGI3NTMyZTA2YTFiMjIwMDRiOWNhZjllOTM2ZDhmNDNjYWE4NTZhJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" />
+</noscript>
+<script type="text/javascript" src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/TyB2YQE">
+</script>
+<div style="" id="usercentrics-root" data-created-at="1673546163838">
+</div>
+<iframe style="display: none;" id="uc-cross-domain-bridge" src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/cross-domain-bridge.htm">
+</iframe>
+<iframe src="Ticketcenter%20-%20FC%20Bayern%20M%C3%BCnchen-Dateien/login-status-iframe.htm" title="keycloak-session-iframe" style="display: none;">
+</iframe>
+</body>
+</html>
